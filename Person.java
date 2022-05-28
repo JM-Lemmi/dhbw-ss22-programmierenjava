@@ -1,5 +1,7 @@
 public class Person {
-    private int anzahl;
+    private String name;
+    private int personalNr;
+    public int anzahl;
 
     public Person() {
         this.anzahl++;
