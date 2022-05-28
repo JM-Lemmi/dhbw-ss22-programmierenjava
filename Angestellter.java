@@ -1,4 +1,4 @@
-public class Angestellter extends Person {
+public class Angestellter extends Person implements IMitarbeiter {
     private int personalNr;
 
     // overwriting the constructor

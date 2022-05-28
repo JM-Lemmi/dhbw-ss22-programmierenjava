@@ -1,4 +1,4 @@
-public class DHStudent extends Student {
+public class DHStudent extends Student implements IMitarbeiter {
     private String kurs;
 
     public DHStudent(String name, String kurs) {
