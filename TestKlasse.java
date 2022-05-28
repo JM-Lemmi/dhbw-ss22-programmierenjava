@@ -79,5 +79,13 @@ public class TestKlasse {
         // Aufgabe 4.1h
         einfallsreich.druckeName();
         einfallsreich.lasseKlausurSchreiben();
+
+        // Aufgabe 4.1jk
+        for (DHStudent dhstudent: dhStudentenFeld) {
+            dhstudent.druckeObjekt();
+        }
+        for (Student stuent: studentenFeld) {
+            stuent.druckeObjekt();
+        }
     }
 }
