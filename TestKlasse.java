@@ -1,3 +1,5 @@
+import java.util.*; // für array.asList(()
+
 public class TestKlasse {
     /** Testdaten fuer Studenten. */
     static Student studentenFeld[] = {
@@ -57,5 +59,9 @@ public class TestKlasse {
         for (IMitarbeiter mitarbeiter : mitarbeiterFeld) {
             mitarbeiter.arbeitenOhneMurren();
         }
+
+        // Aufgabe 4.1f
+        List<Lehrbeauftragter> lehrbeauftragte = Arrays.asList(lehrbeauftragtenFeld);
+        System.out.println("Lehrbeauftragte: " + lehrbeauftragte);
     }
 }

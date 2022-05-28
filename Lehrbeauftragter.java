@@ -21,6 +21,6 @@ public class Lehrbeauftragter {
     }
 
     public String toString() {
-        return "";
+        return name;
     }
 }
