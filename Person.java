@@ -1,9 +1,21 @@
 public class Person {
-    private String name;
-    private int personalNr;
-    public int anzahl;
+    protected String name;
+    static int anzahl;
 
-    public Person() {
+    public Person(String name) {
+        this.name = name;
         this.anzahl++;
+    }
+
+    public void druckeAnzahl() {
+        System.out.println("Es gibt " + anzahl + " Personen.");
+    }
+
+    protected String getName() {
+        return name;
+    }
+
+    public void druckeObjekt() {
+        System.out.println("Der Name lautet: " + name);
     }
 }

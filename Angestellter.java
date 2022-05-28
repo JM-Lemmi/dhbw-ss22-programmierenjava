@@ -1,10 +1,15 @@
 public class Angestellter extends Person {
-    public Angestellter() {
-        super();
+    private int personalNr;
+
+    // overwriting the constructor
+    public Angestellter(String name, int personalNr) {
+        super(name);
+        this.personalNr = personalNr;
     }
 
+    // overwriting druckeObject method in superclass
     public void druckeObjekt() {
-        System.out.println("Der Angestellte heisst " + super.name + ", hat die Personalnr." + super.personalNr + " und ist einer von " + Person.anzahl);
+        System.out.println("Der Angestellte heisst " + super.name + ", hat die Personalnr." + this.personalNr + " und ist einer von " + Person.anzahl);
     }
 
     public void arbeitenOhneMurren() {
