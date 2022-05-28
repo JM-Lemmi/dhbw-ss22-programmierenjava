@@ -40,5 +40,9 @@ public class TestKlasse {
         // Aufgabe 4.1a
         TestKlasse testclass = new TestKlasse();
         System.out.println(Person.anzahl);
+
+        // Aufgabe 4.1b
+        Firma firma = new Firma("DH-Partnerfirma GmbH");
+        firma.druckeName();
     }
 }
