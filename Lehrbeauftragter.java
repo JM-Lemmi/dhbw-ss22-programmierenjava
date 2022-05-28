@@ -20,6 +20,11 @@ public class Lehrbeauftragter {
         }
     }
 
+    // für Aufgabe 4.1h
+    public void druckeName() {
+        System.out.println("Der Lehrbeauftragte heisst " + this.name);
+    }
+
     public String toString() {
         return name;
     }

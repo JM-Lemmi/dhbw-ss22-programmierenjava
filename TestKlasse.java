@@ -63,5 +63,21 @@ public class TestKlasse {
         // Aufgabe 4.1f
         List<Lehrbeauftragter> lehrbeauftragte = Arrays.asList(lehrbeauftragtenFeld);
         System.out.println("Lehrbeauftragte: " + lehrbeauftragte);
+
+        // Aufgabe 4.1g
+        Lehrbeauftragter einfallsreich = lehrbeauftragte.get(1);
+        ArrayList<IKlausurSchreiber> arrayList = new ArrayList<IKlausurSchreiber>();
+        for (DHStudent dhstudent: dhStudentenFeld) {
+            if (dhstudent.getSemester() == 1 || dhstudent.getSemester() == 2) {
+                arrayList.add(dhstudent);
+            }
+        }
+        IKlausurSchreiber prueflinge[] = new IKlausurSchreiber[arrayList.size()];
+        prueflinge = arrayList.toArray(prueflinge);
+        einfallsreich.setPrueflinge(prueflinge);
+        
+        // Aufgabe 4.1h
+        einfallsreich.druckeName();
+        einfallsreich.lasseKlausurSchreiben();
     }
 }
