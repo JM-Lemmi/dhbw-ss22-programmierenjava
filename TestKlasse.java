@@ -95,5 +95,11 @@ public class TestKlasse {
         }
         // Aufgabe 4.1m
         Arrays.asList(dhStudentenFeld);
+        // Aufgabe 4.1n
+        System.out.println("\nAufgabe 4.1n)");
+        Arrays.sort(dhStudentenFeld, (dhStudentenFeld[0]).new ComparatorSemesterNameKurs());
+        for (DHStudent dhstudent: dhStudentenFeld) {
+            System.out.println(dhstudent.toString());
+        }
     }
 }
