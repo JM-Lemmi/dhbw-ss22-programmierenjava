@@ -87,5 +87,13 @@ public class TestKlasse {
         for (Student stuent: studentenFeld) {
             stuent.druckeObjekt();
         }
+
+        // Aufgabe 4.1l
+        Arrays.sort(dhStudentenFeld, (dhStudentenFeld[0]).new ComparatorKursName());
+        for (DHStudent dhstudent: dhStudentenFeld) {
+            System.out.println(dhstudent.toString());
+        }
+        // Aufgabe 4.1m
+        Arrays.asList(dhStudentenFeld);
     }
 }
