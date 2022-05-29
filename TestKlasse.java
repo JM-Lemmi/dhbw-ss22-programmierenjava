@@ -40,10 +40,12 @@ public class TestKlasse {
 
     public static void main(String[] args){
         // Aufgabe 4.1a
+        System.out.println("\nAufgabe 4.1a");
         TestKlasse testclass = new TestKlasse();
         System.out.println(Person.anzahl);
 
         // Aufgabe 4.1b
+        System.out.println("\nAufgabe 4.1b");
         Firma firma = new Firma("DH-Partnerfirma GmbH");
         firma.druckeName();
 
@@ -53,18 +55,22 @@ public class TestKlasse {
             angestelltenFeld[0], angestelltenFeld[1], angestelltenFeld[2], angestelltenFeld[3], angestelltenFeld[4]
         };
         // Aufgabe 4.1c
+        System.out.println("\nAufgabe 4.1c");
         int mitarbeiterZahl = mitarbeiterFeld.length;
         System.out.println(mitarbeiterZahl);
         // Aufgabe 4.1e
+        System.out.println("\nAufgabe 4.1e");
         for (IMitarbeiter mitarbeiter : mitarbeiterFeld) {
             mitarbeiter.arbeitenOhneMurren();
         }
 
         // Aufgabe 4.1f
+        System.out.println("\nAufgabe 4.1f");
         List<Lehrbeauftragter> lehrbeauftragte = Arrays.asList(lehrbeauftragtenFeld);
         System.out.println("Lehrbeauftragte: " + lehrbeauftragte);
 
         // Aufgabe 4.1g
+        System.out.println("\nAufgabe 4.1g)");
         Lehrbeauftragter einfallsreich = lehrbeauftragte.get(1);
         ArrayList<IKlausurSchreiber> arrayList = new ArrayList<IKlausurSchreiber>();
         for (DHStudent dhstudent: dhStudentenFeld) {
@@ -77,18 +83,22 @@ public class TestKlasse {
         einfallsreich.setPrueflinge(prueflinge);
         
         // Aufgabe 4.1h
+        System.out.println("\nAufgabe 4.1h)");
         einfallsreich.druckeName();
         einfallsreich.lasseKlausurSchreiben();
 
         // Aufgabe 4.1jk
+        System.out.println("\nAufgabe 4.1j)");
         for (DHStudent dhstudent: dhStudentenFeld) {
             dhstudent.druckeObjekt();
         }
+        System.out.println("\nAufgabe 4.1k)");
         for (Student stuent: studentenFeld) {
             stuent.druckeObjekt();
         }
 
         // Aufgabe 4.1l
+        System.out.println("\nAufgabe 4.1l)");
         Arrays.sort(dhStudentenFeld, (dhStudentenFeld[0]).new ComparatorKursName());
         for (DHStudent dhstudent: dhStudentenFeld) {
             System.out.println(dhstudent.toString());
