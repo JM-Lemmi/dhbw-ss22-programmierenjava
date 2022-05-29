@@ -101,5 +101,9 @@ public class TestKlasse {
         for (DHStudent dhstudent: dhStudentenFeld) {
             System.out.println(dhstudent.toString());
         }
+
+        // Aufgabe 4.1o
+        System.out.println("\nAufgabe 4.1o)");
+        System.out.println(Person.anzahl);
     }
 }
