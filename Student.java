@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Student extends Person implements IKlausurSchreiber {
+public class Student extends Person implements IKlausurSchreiber, Cloneable {
     int semester;
     private double bafoegSchulden;
 
@@ -43,5 +43,15 @@ public class Student extends Person implements IKlausurSchreiber {
         }
 
         System.out.println("Ich bin ein "+dh+"Student namens "+ this.name + " und schreibe meine Klausuren perfekt!");
+    }
+
+    public Student clone() {
+        try{
+            Student s = (Student) super.clone();
+            super.anzahl++;
+            return (Student) s;
+        } catch (CloneNotSupportedException e) {
+            return null;
+        }
     }
 }

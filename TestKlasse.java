@@ -115,5 +115,10 @@ public class TestKlasse {
         // Aufgabe 4.1o
         System.out.println("\nAufgabe 4.1o)");
         System.out.println(Person.anzahl);
+
+        // Aufgabe 4.1i
+        System.out.println("\nAufgabe 4.1i)");
+        IKlausurSchreiber nachZuegler = ((Student) prueflinge[0]).clone();
+        nachZuegler.klausurSchreiben();
     }
 }
