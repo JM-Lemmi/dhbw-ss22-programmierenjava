@@ -52,15 +52,18 @@ public class TestKlasse {
         Firma firma = new Firma("DH-Partnerfirma GmbH");
         firma.druckeName();
 
-        // Aufgabe 4.1d
-        IMitarbeiter[] mitarbeiterFeld = {
-            dhStudentenFeld[0], dhStudentenFeld[1], dhStudentenFeld[2], dhStudentenFeld[3], dhStudentenFeld[4], dhStudentenFeld[5], dhStudentenFeld[6], dhStudentenFeld[7],
-            angestelltenFeld[0], angestelltenFeld[1], angestelltenFeld[2], angestelltenFeld[3], angestelltenFeld[4]
-        };
         // Aufgabe 4.1c
         System.out.println("\nAufgabe 4.1c");
-        int mitarbeiterZahl = mitarbeiterFeld.length;
+        int mitarbeiterZahl = angestelltenFeld.length + dhStudentenFeld.length;
         System.out.println(mitarbeiterZahl);
+        // Aufgabe 4.1d
+        IMitarbeiter mitarbeiterFeld[] = new IMitarbeiter[mitarbeiterZahl];
+        for (int i = 0; i < angestelltenFeld.length; i++) {
+            mitarbeiterFeld[i] = angestelltenFeld[i];
+        }
+        for (int i = 0; i < dhStudentenFeld.length; i++) {
+            mitarbeiterFeld[i + angestelltenFeld.length] = dhStudentenFeld[i];
+        }
         // Aufgabe 4.1e
         System.out.println("\nAufgabe 4.1e");
         for (IMitarbeiter mitarbeiter : mitarbeiterFeld) {
