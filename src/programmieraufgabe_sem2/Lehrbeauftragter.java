@@ -1,3 +1,5 @@
+package programmieraufgabe_sem2;
+
 public class Lehrbeauftragter {
     private String name;
     private IKlausurSchreiber[] prueflinge;

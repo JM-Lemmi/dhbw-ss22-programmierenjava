@@ -1,6 +1,8 @@
+package programmieraufgabe_sem2;
+
 public class Person {
     protected String name;
-    static int anzahl;
+    protected static int anzahl;
 
     public Person(String name) {
         this.name = name;

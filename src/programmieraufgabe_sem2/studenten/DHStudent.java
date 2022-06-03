@@ -1,4 +1,7 @@
+package programmieraufgabe_sem2.studenten;
+
 import java.util.Comparator;
+import programmieraufgabe_sem2.*;
 
 public class DHStudent extends Student implements IMitarbeiter {
     private String kurs;

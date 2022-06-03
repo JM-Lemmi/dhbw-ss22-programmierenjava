@@ -1,3 +1,5 @@
+package programmieraufgabe_sem2;
+
 public class Angestellter extends Person implements IMitarbeiter {
     private int personalNr;
 

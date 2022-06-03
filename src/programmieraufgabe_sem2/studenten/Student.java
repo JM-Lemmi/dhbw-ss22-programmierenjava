@@ -1,4 +1,7 @@
+package programmieraufgabe_sem2.studenten;
+
 import java.util.Random;
+import programmieraufgabe_sem2.*;
 
 public class Student extends Person implements IKlausurSchreiber, Cloneable {
     int semester;

@@ -1,4 +1,7 @@
+package programmieraufgabe_sem2;
+
 import java.util.*; // für array.asList(()
+import programmieraufgabe_sem2.studenten.*; // * damit nicht ale klassen einzeln importiert werden müssen
 
 public class TestKlasse {
     /** Testdaten fuer Studenten. */

@@ -1,3 +1,5 @@
+package programmieraufgabe_sem2;
+
 public class Firma {
     private String name;
 
