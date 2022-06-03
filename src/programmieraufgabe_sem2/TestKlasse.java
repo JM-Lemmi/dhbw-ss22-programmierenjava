@@ -40,11 +40,13 @@ public class TestKlasse {
         new Lehrbeauftragter("OStR Lehrreich"),
     };
 
+    public static void main(String args[]) {
+        new TestKlasse();
+    }
 
-    public static void main(String[] args){
+    public TestKlasse(){
         // Aufgabe 4.1a
         System.out.println("\nAufgabe 4.1a");
-        TestKlasse testclass = new TestKlasse();
         System.out.println(Person.anzahl);
 
         // Aufgabe 4.1b
