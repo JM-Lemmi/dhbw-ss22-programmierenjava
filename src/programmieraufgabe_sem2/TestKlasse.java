@@ -95,6 +95,11 @@ public class TestKlasse {
         einfallsreich.druckeName();
         einfallsreich.lasseKlausurSchreiben();
 
+        // Aufgabe 4.1i
+        System.out.println("\nAufgabe 4.1i)");
+        IKlausurSchreiber nachZuegler = ((Student) prueflinge[0]).clone();
+        nachZuegler.klausurSchreiben();
+
         // Aufgabe 4.1jk
         System.out.println("\nAufgabe 4.1j)");
         for (DHStudent dhstudent: dhStudentenFeld) {
@@ -123,10 +128,5 @@ public class TestKlasse {
         // Aufgabe 4.1o
         System.out.println("\nAufgabe 4.1o)");
         System.out.println(Person.anzahl);
-
-        // Aufgabe 4.1i
-        System.out.println("\nAufgabe 4.1i)");
-        IKlausurSchreiber nachZuegler = ((Student) prueflinge[0]).clone();
-        nachZuegler.klausurSchreiben();
     }
 }
