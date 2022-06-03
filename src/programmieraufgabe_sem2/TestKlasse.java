@@ -40,10 +40,17 @@ public class TestKlasse {
         new Lehrbeauftragter("OStR Lehrreich"),
     };
 
+    /**
+     * creates a new test class, thus executing the constructor
+     */
     public static void main(String args[]) {
         new TestKlasse();
     }
 
+    /**
+     * Constructor of TestKlasse
+     * Runs all the tests.
+     */
     public TestKlasse(){
         // Aufgabe 4.1a
         System.out.println("\nAufgabe 4.1a");
