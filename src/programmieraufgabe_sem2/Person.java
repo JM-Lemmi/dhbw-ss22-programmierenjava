@@ -1,6 +1,6 @@
 package programmieraufgabe_sem2;
 
-public class Person {
+public abstract class Person {
     protected String name;
     protected static int anzahl;
 
